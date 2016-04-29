@@ -1,0 +1,17 @@
+{
+  "name": "gfm-cli",
+  "version": "1.0.0",
+  "description": "A cli tool to compile markdown",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "marked": "^0.3.5",
+    "commander": "^2.9.0",
+    "sequence": "^3.0.0",
+    "xml2js": "^0.4.16"
+  }
+}
