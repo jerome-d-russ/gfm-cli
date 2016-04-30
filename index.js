@@ -1,7 +1,5 @@
 var marked = require('marked');
 var program = require('commander');
-var xml2js = require('xml2js');
-var parser = new xml2js.Parser();
 var fs = require('fs');
 var style = require('./style.js');
 
