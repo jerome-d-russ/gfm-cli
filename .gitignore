@@ -3,6 +3,7 @@
 node_modules
 tmp
 *.html
+*.exe
 
 # Windows image file caches
 Thumbs.db
