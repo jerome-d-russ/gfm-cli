@@ -3,6 +3,7 @@ var program = require('commander');
 var xml2js = require('xml2js');
 var parser = new xml2js.Parser();
 var fs = require('fs');
+var style = require('./style.js');
 
 program
   .version('0.0.1')
@@ -19,5 +20,7 @@ if (!program.output){
   throw error;
 }
 
-var output = marked(fs.readFileSync(program.input, 'utf-8'));
-fs.writeFileSync(program.output, output);
+var md = fs.readFileSync(program.input, 'utf-8');
+var output = marked(md);
+var html = style.getStart() + output + style.getEnd();
+fs.writeFileSync(program.output, html);
